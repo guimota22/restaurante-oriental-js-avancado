@@ -1,0 +1,42 @@
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background: url(../images/fundo.jpg) no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+header .logo::first-letter {
+    color: #46303c;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container {
+    background-color: #46303c;
+    width: 65rem;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+}
+
+main .container .btn {
+    background-color: #fff;
+    width: 14rem;
+    height: 6rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}

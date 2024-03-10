@@ -1,0 +1,12 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Orienta', sans-serif;
+}
+
+header .logo {
+    padding: 4rem 6rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-shadow: 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/global.css">
+    <link rel="stylesheet" href="./src/css/info2.css">
+    <title>Mais informações</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><h1 class="logo">hao kai</h1></a>
+    </header>
+    <main>
+        <article class="about">
+            <div class="item">
+                <h2>Harumaki de frango</h2>
+                <p>Tradicional petisco chinês recheado com frango <span>por apenas R$20,00</span></p>
+                <a href="#" class="pedir" onclick="pedirPrato(4)">Pedir prato</a>
+            </div>
+            <div class="image right"></div>
+            <div class="image left"></div>
+            <div class="item">
+                <h2>Yakisoba</h2>
+                <p>Tradicional massa japonesa com legumes <span>por apenas R$20,00</span></p>
+                <a href="#" class="pedir" onclick="pedirPrato(5)">Pedir prato</a>
+            </div>
+            <div class="item">
+                <h2>Filadélfia</h2>
+                <p>Salmão e cream cheese <span>por apenas R$20,00</span></p>
+                <a href="#" class="pedir" onclick="pedirPrato(6)">Pedir prato</a>
+            </div>
+            <div class="image right2"></div>
+        </article>
+    </main>
+
+    <footer>
+        <div>
+            <a href="./index.html"><h1 class="logo">hao kai</h1></a>
+            <p>Cozinhando com amor, vivendo com alegria: Hao Kai, onde a vida de todo mundo é mais feliz!</p>
+        </div>
+        <form method="GET" action="index.html">
+            <h2>Contate-nos</h2>
+            <div>
+                <label for="email">email:</label>
+                <input type="email" name="email" id="email" placeholder="Email" class="email">
+            </div>
+            <div>
+                <input type="checkbox" class="pointer"> 
+                <label class="novidades">quero receber novidades</label>
+            </div>
+
+            <input type="submit" value="Enviar" onclick="alert('Seu e-mail foi cadastrado para receber as novidades desse prato!')" class="pointer">
+        </form>
+    </footer>
+
+    <script src="./src/js/informacao.js"></script>
+</body>
+</html>

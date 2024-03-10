@@ -1,0 +1,125 @@
+body {
+    background-color: #46303c;
+}
+
+header {
+    background-color: #432b38;
+}
+
+main .about {
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: var(--max-width-size);
+    margin: 0 auto;
+}
+
+main .about .item {
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+main .about .item h2 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+main .about .item p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 30px 0;
+}
+
+main .about .item span {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: #daa520 ;
+}
+
+main .about .item .pedir {
+    background-color: #e0e0e0;
+    margin-top: 4rem;
+    width: 10rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    align-self: flex-start;
+    text-align: center;
+}
+
+main .about .item::after {
+    content: url(../images/seta_preta.png);
+    position: absolute;
+    height: 3.5rem;
+    left: 23rem;
+    bottom: 23rem;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+}
+
+@keyframes downarrow {
+    0% { transform: translateY(0); opacity: 0.4; }
+    100% { transform: translateY(0.4em); opacity: 0.9; }
+}
+
+main .about .item .pedir:hover {
+    font-weight: 700;
+}
+
+main .about .image {
+    height: 100%;
+    width: 100%;
+}
+
+main .about .image.right {
+    background: url('../images/harumaki-frango-info.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+main .about .image.left {
+    background: url('../images/yakisoba-info.webp') center center no-repeat;
+    background-size: cover;
+}
+
+main .about .image.right2 {
+    background: url('../images/filadelfia-info.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 64px 80px;
+    background-color: #432b38;
+}
+
+footer .logo {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+footer p {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+    font-size: 2rem;
+    gap: 1rem;
+}
+
+footer form input {
+    background-color: #e0e0e0;
+    border: none;
+}
+
+footer form .pointer {
+    cursor: pointer;
+}

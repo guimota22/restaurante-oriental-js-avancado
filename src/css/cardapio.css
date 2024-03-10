@@ -1,0 +1,79 @@
+body {
+ background-color: #46303c;
+}
+
+header {
+    background-color: #432b38;
+    margin-bottom: 15rem;
+}
+
+main .linha1,
+main .linha2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+}
+
+main .linha1 .prato,
+main .linha2 .prato {
+    background-color: #fff;
+    border-radius: 2rem;
+    height: 40rem;
+    text-align: center;
+}
+
+main .linha1 .prato .about .title,
+main .linha2 .prato .about .title {
+    font-size: 2.2rem;
+    padding: 0.6rem 0;
+}
+
+main .linha1 .prato .description,
+main .linha2 .prato .description {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+}
+
+main .linha1 .prato .btn,
+main .linha2 .prato .btn {
+    background-color: #e0e0e0;
+    display: inline-block;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    width: 10rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 64px 80px;
+    background-color: #432b38;
+}
+
+footer .logo {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+footer p {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+    font-size: 2rem;
+    gap: 1rem;
+}
+
+footer form input {
+    background-color: #e0e0e0;
+    border: none;
+}
+
+footer form .pointer {
+    cursor: pointer;
+}
